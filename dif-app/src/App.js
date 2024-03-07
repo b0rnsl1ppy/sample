@@ -20,7 +20,7 @@ function App() {
 
   // state value to fetch data using username
   // keep *blank* to access random public users
-  const [users] = useState("florinpop17")
+  const [users] = useState("its-rnb")
 
   // useEffect hook with empty arrayso hook only runs on initial render of app component
   useEffect(() => {
@@ -52,14 +52,14 @@ function App() {
   return <>
 
     {/* Check if items is array or not */}
-    {Array.isArray(items) ? <> <h2>Array</h2> </> : <> <h2>Not array</h2> </>}
+    {/* {Array.isArray(items) ? <> <h2>Array</h2> </> : <> <h2>Not array</h2> </>} */}
 
     {/* Check if items present else use loading component (Loading.js) */}
     {!items ? <Loading /> : (<>
-      <section>
+      <section className="p-5">
         <h1>Veiwing {users}'s profile </h1>
 
-        <div>
+        <div className="mt-3">
 
           {/* 
         For every item return Profile component
@@ -74,6 +74,9 @@ function App() {
               {items.map((item) => (
 
                 // Exported to props argument in Profile.js
+                // To access item.id unique key
+                // Use the key (unique id) to refer to rest of the respective items
+                // passed in Profile.js function
                 <Profile key={item.id} {...item} />
               ))}
             </div>

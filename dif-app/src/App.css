@@ -1,14 +1,9 @@
-/*
-
-inject base styles from tailwind and other registered plug-ins
+/* inject base styles from tailwind and other registered plug-ins */
 @tailwind base;
-inject component classes from tailwind and other registered plug-ins
+/* inject component classes from tailwind and other registered plug-ins */
 @tailwind components;
-inject utility classes from tailwind and other registered plug-ins
-@tailwind utilities; 
-
-*/
-
+/* inject utility classes from tailwind and other registered plug-ins */
+@tailwind utilities;
 
 /* css start */
 img {
