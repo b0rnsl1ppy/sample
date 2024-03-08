@@ -1,1 +1,1 @@
-github users API using React *basic*
+github users API using React *enhanced* with tailwind css
